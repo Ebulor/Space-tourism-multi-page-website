@@ -1,0 +1,11 @@
+:root {
+  --clr-dark: hsl(230 35% 7%);
+  --clr-light: hsl(231 77% 90%);
+  --clr-white: hsl(0 0% 100%);
+  --half-transparent--clr: rgba(255, 255, 255, 0.5);
+
+  /* font-families */
+  --bellefair: "Bellefair", serif;
+  --ff-barlow-cond: "Barlow Condensed", sans-serif;
+  --ff-barlow: "Barlow", sans-serif;
+}
