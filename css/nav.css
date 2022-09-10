@@ -17,10 +17,10 @@ nav {
   cursor: pointer;
 }
 .open::after {
-  content: url("assets/shared/icon-hamburger.svg");
+  content: url("../assets/shared/icon-hamburger.svg");
 }
 .close::after {
-  content: url("assets/shared/icon-close.svg");
+  content: url("../assets/shared/icon-close.svg");
 }
 .close {
   margin-left: auto;
