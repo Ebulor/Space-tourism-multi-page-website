@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading-text {
+  width: 100%;
+  font-family: var(--ff-barlow-cond);
+  color: var(--clr-light);
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 30px;
+}
+.heading-text span {
+  font-weight: bold;
+  color: var(--clr-light);
+  margin-right: 10px;
+  opacity: 0.5;
+}
+.crew {
+  position: relative;
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crew-img {
+  width: 100%;
+}
+.crew hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--half-transparent--clr);
+  position: absolute;
+  top: 99.8%;
+  z-index: -1;
+}
+.crew-name {
+  font-family: var(--bellefair);
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+}
+.role {
+  color: var(--clr-light);
+  font-family: var(--bellefair);
+  opacity: 0.5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+}
+p {
+  color: var(--clr-light);
+  font-family: var(--ff-barlow);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.btn-container {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.btn {
+  border-radius: 50%;
+  background-color: var(--half-transparent--clr);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.clicked {
+  background-color: white;
+}
+@media (min-width: 650px) {
+  .heading-text {
+    text-align: left;
+    font-size: 1.2rem;
+    width: 85%;
+    padding: 2em 0 4em 0;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .btn-container {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+  }
+  .crew {
+    max-width: 600px;
+  }
+  .btn {
+    width: 12px;
+    height: 12px;
+  }
+  .text {
+    position: relative;
+  }
+  hr {
+    display: none;
+  }
+  .crew-bio {
+    font-size: 17px;
+    padding-bottom: 5em;
+  }
+  .role {
+    font-size: 1.6rem;
+  }
+  .crew-name {
+    font-size: 2.6rem;
+    margin: 20px 0 25px 0;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+  main {
+    width: 100%;
+    margin-top: auto;
+  }
+  .heading-text {
+    font-size: 1.4rem;
+    padding-bottom: 0 0 6em 0;
+  }
+  .container {
+    flex-direction: row-reverse;
+    text-align: left;
+    width: 85%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .crew {
+    width: 40%;
+    max-width: 40%;
+  }
+  .btn {
+    width: 14px;
+    height: 14px;
+  }
+  .text {
+    align-items: flex-start;
+    width: 50%;
+  }
+  .crew-bio {
+    font-size: 18px;
+  }
+  .role {
+    font-size: 1.3rem;
+  }
+  .crew-name {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1160px) {
+  body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+  }
+  .heading-text {
+    font-size: 1.7rem;
+    padding: 2em 0;
+  }
+  .container {
+    width: 85%;
+  }
+  .role {
+    font-size: 1.6rem;
+  }
+  .crew-bio {
+    max-width: 75%;
+  }
+}
