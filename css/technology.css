@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main,
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading-text {
+  width: 100%;
+  font-family: var(--ff-barlow-cond);
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 30px;
+}
+.heading-text span {
+  font-weight: bold;
+  color: var(--half-transparent--clr);
+  margin-right: 10px;
+}
+.tech-img {
+  width: 100%;
+}
+.tech-img img {
+  width: 100%;
+}
+.potrait {
+  display: none;
+}
+.details {
+  width: 85%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.details-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
+  display: flex;
+}
+.nav-btn {
+  cursor: pointer;
+  color: white;
+  font-family: var(--bellefair);
+  background-color: transparent;
+  border: 1px solid var(--clr-light);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.active-nav {
+  background-color: white;
+  color: black;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tech-heading {
+  color: var(--clr-light);
+  font-family: var(--ff-barlow-cond);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.tech-name {
+  font-family: var(--bellefair);
+  color: white;
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+}
+.tech-info {
+  color: var(--clr-light);
+  font-family: var(--ff-barlow);
+  line-height: 1.7;
+  font-size: 15px;
+  margin: 10px 0;
+}
+@media (min-width: 650px) {
+  .heading-text {
+    text-align: left;
+    font-size: 1.2rem;
+    width: 85%;
+    padding: 2em 0 4em 0;
+  }
+  .tech-heading {
+    font-size: 1.6rem;
+  }
+  .tech-name {
+    font-size: 2.6rem;
+    margin: 15px 0 10px 0;
+  }
+  .tech-info {
+    font-size: 17px;
+    padding-bottom: 5em;
+  }
+}
+@media (min-width: 800px) {
+  body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media (min-width: 900px) {
+  main {
+    align-items: flex-end;
+  }
+  .heading-text {
+    width: 90%;
+    font-size: 1.4rem;
+    padding-bottom: 0 0 6em 0;
+  }
+  .container {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .tech-img {
+    width: 40%;
+  }
+  .landscape {
+    display: none;
+  }
+  .potrait {
+    display: block;
+  }
+  .details {
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    max-width: unset;
+  }
+  .details-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100px;
+  }
+  .nav-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    margin: 0 0 25px 0;
+  }
+  .text {
+    text-align: left;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 30px;
+    max-width: 500px;
+  }
+  .tech-heading {
+    font-size: 1.4rem;
+  }
+  .tech-name {
+    font-size: 3rem;
+  }
+  .tech-info {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+@media (min-width: 1160px) {
+  body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+  main {
+    margin-top: 0;
+    justify-content: center;
+  }
+  .heading-text {
+    font-size: 1.7rem;
+    padding: 2em 0;
+  }
+  .container {
+    width: 90%;
+    align-items: center;
+  }
+  .details {
+    width: 55%;
+    align-items: flex-start;
+  }
+  .nav-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+  .text {
+    max-width: 550px;
+  }
+  .tech-name {
+    font-size: 4rem;
+  }
+  .tech-info {
+    max-width: 80%;
+  }
+}
